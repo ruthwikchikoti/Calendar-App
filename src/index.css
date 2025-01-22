@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Landing page animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.grid > div {
+  opacity: 0;
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+.grid > div:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.grid > div:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.grid > div:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Hover effects */
+.hover\:shadow-lg {
+  transition: all 0.3s ease;
+}
+
+.hover\:shadow-lg:hover {
+  transform: translateY(-2px);
+}
