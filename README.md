@@ -2,6 +2,8 @@
 
 A modern web application that integrates with Google Calendar to help manage and track  schedules and events.
 
+## Demo : https://www.loom.com/share/cb3f11589e2649bcad5c86ee68f1ebad?sid=efa2d2ff-ecd0-4830-a4e2-a10d7d372df9
+
 ## Features
 
 - 🔐 Google OAuth2.0 Authentication
